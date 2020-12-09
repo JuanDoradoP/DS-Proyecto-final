@@ -7,5 +7,10 @@ if [[ $resultTest -gt 0 ]]
         exit;
     else 
         echo "test ok"
+        echo "Making package and deploy...."
+        sudo chmod +x package.sh
+        sudo chmod +x deploy.sh
+        ./package.sh
+        ./deploy.sh
     fi
 

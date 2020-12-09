@@ -1,6 +1,6 @@
 image: icesiops/hello-world-python:0.0.1
 port: 5000
-servicetype: ClusterIP
+servicetype: NodePort
 replicas: 2
 name: hello-world-python
 ingressname: gateway-ingress

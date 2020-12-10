@@ -14,12 +14,12 @@ if [[ $resultTest -gt 0 ]]
         docker push ahadeo/hello-world-python:0.0.1
 	echo "Package ok."
 	echo "Making deploy"
-	existeServicio=`helm get hello-world-python| grep -c "name"`
+	existeServicio=`helm list  | grep -c "hello-world-python"`
         if [ $existeServicio -gt 0 ]
             then
                 helm upgrade hello-world-python $path/hello-world-python
             else
-                helm install --name hello-world-python $path/hello-world-python
+                helm install hello-world-python $path/hello-world-python
 
 
             fi

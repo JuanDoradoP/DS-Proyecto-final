@@ -59,8 +59,9 @@ Por ultimo, se realizo el despliegue en kubernetes, usando la herramienta helm. 
 
 ## Ejecución de la aplicación
 
-### prerrequisitos para la ejecución.
+### A tener en cuenta para la ejecución.
 
+Antes de poder ejeutar la aplicacion debes tener instaladas las siguientes herramientas.
 
  - IDE o en su defecto posibilidad de ejecutar aplicaciones basadas en python.
  - Docker

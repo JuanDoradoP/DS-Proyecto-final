@@ -7,5 +7,5 @@ if [ $validateHelmService -gt 0 ]
 	echo "entre al then"
     else
 	echo "entre al else"    
-        helm install --name hello-world-python $path/hello-world-python
+        helm install hello-world-python $path/hello-world-python
     fi

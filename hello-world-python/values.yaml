@@ -1,4 +1,4 @@
-image: icesiops/hello-world-python:0.0.1
+image: ahadeo/hello-world-python:0.0.1
 port: 5000
 servicetype: NodePort
 replicas: 2
